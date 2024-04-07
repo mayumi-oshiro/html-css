@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+        div {
+            color: black;
+            width: 150px;
+        }
+        div > p {
+            display: none;
+        }
+    
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: rgba(38, 205, 19, 0.695);
+            width: 300px;
+        }
+
+        div:hover {
+            color: yellowgreen;
+        }
+
+        p#fim {
+            color:red;
+            background-color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo.</p>
+    <div>
+        Passe o mouse aqui.
+        <p>TEXTO ESCONDIDO...</p>
+        <p id="fim">Fim do exemplo.</p>
+    </div>
+</body>
+</html>
